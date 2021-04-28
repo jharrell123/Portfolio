@@ -31,6 +31,11 @@ group :production do
   gem 'pg', '~> 0.21' # for Heroku deployment
   gem 'rails_12factor'
 end
+
+gem 'bootstrap', '~> 5.0.0.beta2'
+gem 'jquery-rails'
+gem 'friendly_id', '~> 5.4.0'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
