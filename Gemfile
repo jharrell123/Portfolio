@@ -38,7 +38,7 @@ gem 'friendly_id', '~> 5.4.0'
 
 gem 'mini_racer'
   
-
+gem 'simplecov', require: false, group: :test
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
