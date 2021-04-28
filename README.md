@@ -22,3 +22,20 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+Common commands
+
+bundle install
+rails s -b 0.0.0.0
+
+git add -A
+git status
+git commit -m "Tag or message"
+git push
+git pull
+
+heroku rake db:migrate
+
+rails db:migrate
+
+#Rspec
+bundle exec rspec

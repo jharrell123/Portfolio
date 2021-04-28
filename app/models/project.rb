@@ -5,4 +5,9 @@ class Project < ApplicationRecord
     def should_generate_new_friendly_id?
         title_changed?
     end
+
+    validates_presence_of :title, :description
+
+
 end
+
