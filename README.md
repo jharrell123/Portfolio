@@ -33,6 +33,7 @@ git commit -m "Tag or message"
 git push
 git pull
 
+git push heroku
 heroku rake db:migrate
 
 rails db:migrate
