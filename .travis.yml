@@ -10,4 +10,11 @@ before_install:
 
 script:
  - bundle exec rspec
-
+ 
+deploy:
+ provider: heroku
+ api_key: 4d762156-8b8a-4dc0-ba0d-64afef118295
+ app: stark-falls-89261
+ run: "rake db:migrate"
+ on:
+  all_branches: true
