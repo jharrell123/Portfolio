@@ -1,35 +1,8 @@
 <% provide(:page_title, 'All Projects') %>
 <% provide(:project_active, 'active') %>
 
-
-<h1>Projects</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th>Description</th>
-      <th>Slug</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @projects.each do |project| %>
-      <tr>
-        <td><%= project.title %></td>
-        <td><%= project.body %></td>
-        <td><%= project.description %></td>
-        <td><%= project.slug %></td>
-        <td><%= link_to 'Show', project %></td>
-        <td><%= link_to 'Edit', edit_project_path(project) %></td>
-        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'You are about to delete it, you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Project', new_project_path %>
+<div class="row">
+  <% @projects.each do |project| %>
+    <%= render project %>
+  <% end %>
+</div>
