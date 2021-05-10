@@ -4,6 +4,9 @@
         <h4 class="card-title"><%= link_to project.title, project %></h4>
         <%= link_to project do %>
         <p class="card-text"><%= truncate(project.description, length: 130) %></p>
+        <%= link_to 'Show', project %></td>
+        <%= link_to 'Edit', edit_project_path(project) %></td>
+        <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'You are about to delete it, you sure?' } %></td>
       <% end %>
     </div>
   </div>
