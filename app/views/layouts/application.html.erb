@@ -27,6 +27,7 @@
     <% if alert %>
     <p class="alert alert-danger"><%= alert %></p>
     <% end %>
+    <%= render 'layouts/navbar' %>
     <div class="container <%= controller_name %> <%= action_name %>">
       <%= yield %>
     </div>
