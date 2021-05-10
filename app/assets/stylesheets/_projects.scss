@@ -17,7 +17,7 @@
           font-size: 1.3rem;
           margin-bottom: 0;
           a {
-            color: black;
+            color: rgb(5, 17, 7);
             text-decoration: none;
           }
         }
@@ -47,7 +47,7 @@
   .projects.edit, .projects.new {
     .card {
       .card-block {
-        background-color: #e8e8e8;
+        background-color: #6610f2;
       }
       .card-title {
         margin-bottom: 0;
@@ -59,13 +59,13 @@
         border-right: 0;
         input[type='text'], textarea {
           font-size: 14px;
-          background-color: #787878;
+          background-color: #7a7a7a;
         }
         textarea {
           height: 100px;
         }
         &:last-child {
-          background-color: #787878;
+          background-color: #191919;
         }
       }
     }
