@@ -37,6 +37,10 @@ git push heroku
 heroku rake db:migrate
 
 rails db:migrate
+rails db:migrate:status
+rails db:migrate:drop
+Also: look in the db folder if you are having an issue deleting a migration. Delete the one you are having an issue with. 
+
 
 #Rspec
 bundle exec rspec

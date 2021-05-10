@@ -1,10 +1,10 @@
 .projects.index {
     .card {
-      border: none;
-      border-radius: 0;
+      border: 6px  solid  darkslateblue ;
+      border-radius: 1.4;
       height: 400px;
       margin-bottom: 20px;
-      background-color: white;
+      background-color: lightgray;
       .card-topper {
         height: 200px;
         width: 100%;
@@ -17,7 +17,7 @@
           font-size: 1.3rem;
           margin-bottom: 0;
           a {
-            color: rgb(5, 17, 7);
+            color: black;
             text-decoration: none;
           }
         }
@@ -36,7 +36,7 @@
           margin-bottom: 0.3rem;
         }
         .card-text {
-          font-size: 0.9rem;
+          font-size: .9rem;
           color: black;
         }
   
@@ -47,7 +47,7 @@
   .projects.edit, .projects.new {
     .card {
       .card-block {
-        background-color: #6610f2;
+        background-color: darkslateblue;
       }
       .card-title {
         margin-bottom: 0;
@@ -59,7 +59,7 @@
         border-right: 0;
         input[type='text'], textarea {
           font-size: 14px;
-          background-color: #7a7a7a;
+          background-color: #e8e8e8;
         }
         textarea {
           height: 100px;
@@ -73,7 +73,7 @@
   
   .projects.show {
     .author-bio {
-      background-color: white;
+      background-color: darkslateblue;
       padding: 15px 45px;
       margin: 30px 0;
       img {
