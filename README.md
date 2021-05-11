@@ -44,3 +44,5 @@ Also: look in the db folder if you are having an issue deleting a migration. Del
 
 #Rspec
 bundle exec rspec
+
+Adding something so I can push to git.
