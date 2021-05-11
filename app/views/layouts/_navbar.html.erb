@@ -24,28 +24,30 @@
   </div>
 </div>
 
-<nav class="navbar navbar-dark bg-info">
+
+<nav class="navbar-expand-lg navbar-light bg-info">
   <div class='container'>
-    <a class='navbar-brand' href='/'>
-      Portfolio<span class='light'>projects</span>
-    </a>
     <ul class="nav navbar-nav pull-sm-right hidden-xs-down">
       <li class="nav-item">
-        <%= link_to 'Projects', root_path, class: "nav-link #{yield(:project_active)}" %>
+        <a <%= link_to 'Home', root_path, class: "nav-link #{yield(:project_active)}" %></a>
       </li>
       <li class="nav-item">
-        <%= link_to 'About', about_path, class: "nav-link #{yield(:about_active)}" %>
+        <a <%= link_to 'New Post', new_project_path, class: "nav-link #{yield(:project_active)}" %></a>
       </li>
       <li class="nav-item">
-        <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %>
+        <a <%= link_to 'About', about_path, class: "nav-link #{yield(:about_active)}" %></a>
+      </li>
+      <li class="nav-item">
+        <a <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %></a>
       </li>
       <% if user_signed_in? %>
         <li class="nav-item dropdown user-nav">
-          <a class="nav-link dropdown-toggle <%= yield(:user) %>" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle <%= yield(:user) %>" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <%= current_user.display %>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <%= link_to 'My projects', new_project_path, class: "dropdown-item" %>
+            <%= link_to 'Home', new_project_path, class: "dropdown-item" %>
+            <%= link_to 'New Post', new_project_path, class: "dropdown-item" %>
             <%= link_to 'Account', user_password_path, class: "dropdown-item" %>
             <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "dropdown-item" %>
           </div>
@@ -54,3 +56,4 @@
     </ul>
   </div>
 </nav>
+

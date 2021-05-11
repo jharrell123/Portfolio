@@ -8,6 +8,7 @@
         <h4 class="card-title"><%= link_to project.title, project %></h4>
         <%= link_to project do %>
         <p class="card-text"><%= truncate(project.description, :length => 130) %></p>
+        <p class="published-date"><%= project.display_day_published %></p>
         <p class="card-text"><%= truncate(project.body, :length => 130) %></p>
         <%= link_to 'Show', project %></td>
         <%= link_to 'Edit', edit_project_path(project) %></td>

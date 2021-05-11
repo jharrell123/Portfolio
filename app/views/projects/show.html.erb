@@ -2,25 +2,15 @@
 <% provide(:project_active, 'active') %>
 
 
-<p>
-  <strong>Title:</strong>
-  <%= @project.title %>
-</p>
+<div class="row">
+  <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-xs-center">
+    <p><h1><%= @project.title %></h1></p>
+    <p><%= @project.display_day_published %></p>
+    <p><%= @project.body %></p>
+    <p><%= @project.description %></p>
+    <%= link_to 'Edit', edit_project_path(@project) %> |
+    <%= link_to 'Back', projects_path %>
+  </div>
+</div>
 
-<p>
-  <strong>Body:</strong>
-  <%= @project.body %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @project.description %>
-</p>
-
-<p>
-  <strong>Slug:</strong>
-  <%= @project.slug %>
-</p>
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
